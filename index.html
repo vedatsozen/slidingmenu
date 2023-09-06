@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VE JAVASCRIPT PRATİĞİ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<img class="hamburger" src="images/hamburger.png">
+    
+<div id="kayanmenu">
+
+
+
+<img class="kapat" src="images/kapat.png">
+
+<ul>
+    <li>ANASAYFA</li>
+    <li>VİZYON</li>
+    <li>MİSYON</li>
+</ul>
+
+</div>
+
+</body>
+
+<script>
+
+$(document).ready(function() {
+
+$(".hamburger").click(function() {
+$("#kayanmenu").addClass("kayanmenuac");
+$("#kayanmenu").removeClass("kayanmenukapat");
+$(".hamburger").hide();
+})
+
+$(".kapat").click(function() {
+$("#kayanmenu").addClass("kayanmenukapat");
+$("#kayanmenu").removeClass("kayanmenuac");
+$(".hamburger").show();
+})
+
+})
+
+
+</script>
+
+
+</html>
