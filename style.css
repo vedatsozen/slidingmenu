@@ -107,3 +107,11 @@ ul li:hover {
     left: -100vw;
     transition: 400ms ease;
 }
+
+@media only screen and (max-width:600px) {
+
+ul li {
+    font-size:30px;
+}
+
+}
